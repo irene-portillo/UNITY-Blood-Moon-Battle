@@ -7,6 +7,22 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // NOTE: C uses public/private vars -- SIMILAR TO JAVA 
+    // be careful, these vars are SET IN UNITY ENGINE
+    public float acceleration;
+    public float groundSpeed; 
+    public float jumpSpeed; 
+    [Range(0f, 1f)]
+    public float groundDecay = 0.9f;
+
+    public Rigidbody2D rigBody;
+    public BoxCollider2D groundCollider;
+    public LayerMask groundMask;
+    public bool grounded;
+
+    float xInput;
+    float yInput;
+
     // Start is called before the first frame update
     void Start(){}
 
