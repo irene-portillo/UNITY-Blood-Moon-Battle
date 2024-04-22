@@ -30,9 +30,19 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         getInput();
+        handleJump();
     }
     void getInput()
     {
         xInput = Input.GetAxis("Horizontal"); // returns coordinate based on if left or right (-1,0) and (1,0)
         yInput = Input.GetAxis("Vertical");  
     }
+
+    void handleJump()
+    {
+        if (Input.GetButtonDown("Jump")  && grounded) // Check y input 
+        {
+            rigBody.velocity = new Vector2(rigBody.velocity.x, jumpSpeed); 
+        }
+    }
+
