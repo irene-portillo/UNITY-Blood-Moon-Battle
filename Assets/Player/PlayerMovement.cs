@@ -53,8 +53,15 @@ public class PlayerMovement : MonoBehaviour
             float newSpeed = Mathf.Clamp(rigBody.velocity.x + increment, -groundSpeed, groundSpeed); // num in first param cant exceed 2nd or 3rd vals
             rigBody.velocity = new Vector2(newSpeed, rigBody.velocity.y);
 
+            changeSpriteDirection();
         }
         
+    }
+
+    void changeSpriteDirection()
+    {
+        float direction = Mathf.Sign(xInput); // see which way char is facing -1 or 1 
+        transform.localScale = new Vector3(direction, 1, 1); //flip character
     }
 
     void handleJump()
