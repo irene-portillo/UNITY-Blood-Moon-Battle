@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
+    public GameObject sporeObj;
+    public int spawnRate; // seconds 
+    private float timer = 0 ;
     void Start()
     {
         
@@ -13,4 +16,5 @@ public class EnemyBehavior : MonoBehaviour
     void Update()
     {
     }
+
 }
