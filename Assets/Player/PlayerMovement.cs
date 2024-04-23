@@ -32,10 +32,29 @@ public class PlayerMovement : MonoBehaviour
         getInput();
         handleJump();
     }
+
+    // runs to catch up w quote // things move in frame independent way // used for input? 
+    private void FixedUpdate()
+    {
+        moveWithInput();
+    }
+
     void getInput()
     {
         xInput = Input.GetAxis("Horizontal"); // returns coordinate based on if left or right (-1,0) and (1,0)
         yInput = Input.GetAxis("Vertical");  
+    }
+
+    void moveWithInput() // .normalized makes sure diagnally is same speed -- if u wanna add 
+    {
+        if (Mathf.Abs(xInput) > 0) // Check x input 
+        {
+            float increment = xInput * acceleration;
+            float newSpeed = Mathf.Clamp(rigBody.velocity.x + increment, -groundSpeed, groundSpeed); // num in first param cant exceed 2nd or 3rd vals
+            rigBody.velocity = new Vector2(newSpeed, rigBody.velocity.y);
+
+        }
+        
     }
 
     void handleJump()
