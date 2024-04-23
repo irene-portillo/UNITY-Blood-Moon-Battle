@@ -7,6 +7,7 @@ public class EnemyBehavior : MonoBehaviour
     public GameObject sporeObj;
     public int spawnRate; // seconds 
     private float timer = 0 ;
+
     void Start()
     {
         
@@ -15,6 +16,20 @@ public class EnemyBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        updateTimer();
+    }
+
+    void updateTimer() // update timer + shoots 
+    {
+        if (timer < spawnRate)
+        {
+            timer += Time.deltaTime;
+        }
+        else
+        {
+            shootSpore();
+            timer = 0;
+        }
     }
 
 }
