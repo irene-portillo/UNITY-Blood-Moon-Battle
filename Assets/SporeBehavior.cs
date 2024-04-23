@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class SporeBehavior : MonoBehaviour
 {
-    public int lifetime;
+    public float lifetime;
     public CircleCollider2D sporeCollider;
     public float velocity;
 
-    void Start(){}
+    void Start(){
+        lifetime += Time.time;
+    }
 
     void Update()
     {
@@ -23,10 +25,11 @@ public class SporeBehavior : MonoBehaviour
 
     void manageLifetime()
     {
-        if ((int)Time.time >= lifetime)
+        if ( Time.time >= lifetime) 
         {
             Destroy(gameObject); // Destroy itself after passes liftime
         }
+
     }
 
 }
