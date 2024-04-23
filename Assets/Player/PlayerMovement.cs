@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rigBody;
     public BoxCollider2D groundCollider;
     public LayerMask groundMask;
-    public bool grounded;
+    public bool isGrounded;
 
     float xInput;
     float yInput;
@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
 
     void handleJump()
     {
-        if (Input.GetButtonDown("Jump")  && grounded) // Check y input 
+        if (Input.GetButtonDown("Jump")  && isGrounded) // Check y input 
         {
             rigBody.velocity = new Vector2(rigBody.velocity.x, jumpSpeed); 
         }
@@ -76,12 +76,12 @@ public class PlayerMovement : MonoBehaviour
 
     void checkGrounded()
     {
-        grounded = Physics2D.OverlapAreaAll(groundCollider.bounds.min, groundCollider.bounds.max, groundMask).Length > 0;   
+        isGrounded = Physics2D.OverlapAreaAll(groundCollider.bounds.min, groundCollider.bounds.max, groundMask).Length > 0;   
     }
 
     void applyFriction()
     {
-        if (grounded && xInput == 0 && yInput == 0 && rigBody.velocity.y <= 0)
+        if (isGrounded && xInput == 0 && yInput == 0 && rigBody.velocity.y <= 0)
         {
             rigBody.velocity *= groundDecay;
         }
