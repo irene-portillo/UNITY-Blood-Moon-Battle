@@ -36,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
     // runs to catch up w quote // things move in frame independent way // used for input? 
     private void FixedUpdate()
     {
+        checkGrounded();
         moveWithInput();
     }
 
@@ -70,5 +71,10 @@ public class PlayerMovement : MonoBehaviour
         {
             rigBody.velocity = new Vector2(rigBody.velocity.x, jumpSpeed); 
         }
+    }
+
+    void checkGrounded()
+    {
+        grounded = Physics2D.OverlapAreaAll(groundCollider.bounds.min, groundCollider.bounds.max, groundMask).Length > 0;   
     }
 
