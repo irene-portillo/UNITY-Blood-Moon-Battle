@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SporeBehavior : MonoBehaviour
 {
+    public int lifetime;
     public CircleCollider2D sporeCollider;
+    public float velocity;
 
     // Start is called before the first frame update
     void Start(){}
