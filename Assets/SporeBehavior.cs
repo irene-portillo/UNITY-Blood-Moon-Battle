@@ -8,16 +8,24 @@ public class SporeBehavior : MonoBehaviour
     public CircleCollider2D sporeCollider;
     public float velocity;
 
-    // Start is called before the first frame update
     void Start(){}
 
-    // Update is called once per frame
-    void Update(){}
+    void Update()
+    {
+        manageLifetime(); // Make sure it's within its lifetime
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(gameObject); // Destroy itself on collision
+    }
 
+    void manageLifetime()
+    {
+        if ((int)Time.time >= lifetime)
+        {
+            Destroy(gameObject); // Destroy itself after passes liftime
+        }
     }
 
 }
