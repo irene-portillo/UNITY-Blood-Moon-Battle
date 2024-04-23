@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         checkGrounded();
+        applyFriction();
         moveWithInput();
     }
 
@@ -78,3 +79,12 @@ public class PlayerMovement : MonoBehaviour
         grounded = Physics2D.OverlapAreaAll(groundCollider.bounds.min, groundCollider.bounds.max, groundMask).Length > 0;   
     }
 
+    void applyFriction()
+    {
+        if (grounded && xInput == 0 && yInput == 0 && rigBody.velocity.y <= 0)
+        {
+            rigBody.velocity *= groundDecay;
+        }
+    }
+
+}
