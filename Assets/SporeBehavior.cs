@@ -13,6 +13,7 @@ public class SporeBehavior : MonoBehaviour
     void Update()
     {
         manageLifetime(); // Make sure it's within its lifetime
+        transform.position -= (Vector3.left * velocity) * Time.deltaTime; //Move position
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
