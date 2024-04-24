@@ -45,4 +45,17 @@ public class PlayerAttacks : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            enemyObject = collision.gameObject; // colliding with enemy
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        enemyObject = null; // not colliding to anything  
+    }
+
 }
