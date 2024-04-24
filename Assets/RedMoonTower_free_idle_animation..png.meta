@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a4adab9605462c4180a92a84d36920b
-      internalID: 732826871
+      spriteID: 80c7e09e6cc654c4a83fb99cd599a5df
+      internalID: -580423183
       vertices: []
       indices: 
       edges: []
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43915b11afe183d4385477dfd560fe64
-      internalID: -966882724
+      spriteID: 5c0dbc0e38eb5294f85b46adada7e204
+      internalID: 1064940747
       vertices: []
       indices: 
       edges: []
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c9b44ea36a326f4cbb2d72682be7ab1
-      internalID: 2095460298
+      spriteID: beda09c70edf2af41be73ae4b4eaa779
+      internalID: -2017508991
       vertices: []
       indices: 
       edges: []
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a38401544348e5469a9445860f175c4
-      internalID: -1438082807
+      spriteID: 950dbe24a1560f34ab48d6cc24d6fd2f
+      internalID: -300848041
       vertices: []
       indices: 
       edges: []
@@ -195,8 +195,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7eba0df9518d9c47a2ad8862d41647f
-      internalID: 1702027027
+      spriteID: a750fa1ac3c1e2240b202bc6a0889b49
+      internalID: 1333443140
       vertices: []
       indices: 
       edges: []
@@ -216,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66d34a72a0080e440a69ac8c4bc8f36c
-      internalID: 395623248
+      spriteID: 6b3564716b0e29c46ba6c2760aacba31
+      internalID: 1778301030
       vertices: []
       indices: 
       edges: []
@@ -237,8 +237,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a60e6741c30c0744ad6f7d5569121f2
-      internalID: 681700052
+      spriteID: d9bae20215a70e64f93a34b6bf96d4a1
+      internalID: -398650672
       vertices: []
       indices: 
       edges: []
@@ -258,8 +258,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8681740071b8d4e4c80e9da419a09b36
-      internalID: -159934398
+      spriteID: ce69ea8bb34159f4da9235e48bf00b83
+      internalID: 1375200774
       vertices: []
       indices: 
       edges: []
@@ -279,8 +279,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d483cee46fc468a42aba44ee75c32d99
-      internalID: -1947454038
+      spriteID: 8bde2c8c0036b974f88efab7c6d9f973
+      internalID: -702418585
       vertices: []
       indices: 
       edges: []
@@ -300,8 +300,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6031f6eae48b35841984b76eaa244f08
-      internalID: -2132118921
+      spriteID: 4794078f8a888e747ae63c8b0abbec7c
+      internalID: 1780450847
       vertices: []
       indices: 
       edges: []
@@ -321,8 +321,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cf1dd56ec5123044a4f9c30926a9698
-      internalID: 1744495954
+      spriteID: 7ab612c45a796f1469f6da03cab1a735
+      internalID: -1072228420
       vertices: []
       indices: 
       edges: []
@@ -338,17 +338,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RedMoonTower_free_idle_animation._0: 732826871
-      RedMoonTower_free_idle_animation._1: -966882724
-      RedMoonTower_free_idle_animation._10: 1744495954
-      RedMoonTower_free_idle_animation._2: 2095460298
-      RedMoonTower_free_idle_animation._3: -1438082807
-      RedMoonTower_free_idle_animation._4: 1702027027
-      RedMoonTower_free_idle_animation._5: 395623248
-      RedMoonTower_free_idle_animation._6: 681700052
-      RedMoonTower_free_idle_animation._7: -159934398
-      RedMoonTower_free_idle_animation._8: -1947454038
-      RedMoonTower_free_idle_animation._9: -2132118921
+      RedMoonTower_free_idle_animation._0: -580423183
+      RedMoonTower_free_idle_animation._1: 1064940747
+      RedMoonTower_free_idle_animation._10: -1072228420
+      RedMoonTower_free_idle_animation._2: -2017508991
+      RedMoonTower_free_idle_animation._3: -300848041
+      RedMoonTower_free_idle_animation._4: 1333443140
+      RedMoonTower_free_idle_animation._5: 1778301030
+      RedMoonTower_free_idle_animation._6: -398650672
+      RedMoonTower_free_idle_animation._7: 1375200774
+      RedMoonTower_free_idle_animation._8: -702418585
+      RedMoonTower_free_idle_animation._9: 1780450847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
