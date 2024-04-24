@@ -23,6 +23,7 @@ public class PlayerAttacks : MonoBehaviour
     {
         if ( Input.GetKey(KeyCode.F) && playerCanAttack() ) // player attempts to attack 
         {
+            attack();
         }
         updateTimer();
     }
@@ -30,6 +31,16 @@ public class PlayerAttacks : MonoBehaviour
     private bool playerCanAttack() 
     {
         return (enemyObject != null) && (attackTimer >= attackRate); // Check if colliding w enemy & cooldown is ok
+    }
+
+    void attack()
+    {
+        EnemyHealth enemyHealthScript = enemyObject.GetComponentInChildren<EnemyHealth>(); 
+        if (enemyHealthScript != null) //make sure script exists
+        {
+            enemyHealthScript.takeDamage(1); // make enemy take damage -1hp
+            attackTimer = 0; //reset timer
+        }
     }
 
     void updateTimer()
