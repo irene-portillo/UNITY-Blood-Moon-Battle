@@ -21,7 +21,14 @@ public class PlayerAttacks : MonoBehaviour
 
     void Update()
     {
+        if ( Input.GetKey(KeyCode.F) && playerCanAttack() ) // player attempts to attack 
+        {
+        }
     }
 
+    private bool playerCanAttack() 
+    {
+        return (enemyObject != null) && (attackTimer >= attackRate); // Check if colliding w enemy & cooldown is ok
+    }
 
 }
