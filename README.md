@@ -11,7 +11,7 @@ Add later**
     
     The following are controls for player:
         'A' --> move player sprite LEFT
-        'W' --> move player sprite UP
         'D' --> move player sprite RIGHT
+        'SPACE' --> move player sprite UP
         'F' --> attack!
 
