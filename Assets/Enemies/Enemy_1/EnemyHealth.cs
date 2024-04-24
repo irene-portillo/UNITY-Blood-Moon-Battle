@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public int enemyHealth;
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void takeDamage(int amount)
+    {
+        enemyHealth -= amount;
+        Debug.Log("ENEMY took damage! Health: " + enemyHealth);
     }
 }
