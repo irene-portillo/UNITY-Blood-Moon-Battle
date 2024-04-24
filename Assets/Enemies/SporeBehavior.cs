@@ -20,6 +20,7 @@ public class SporeBehavior : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //Debug.Log("collided!");
         Destroy(gameObject); // Destroy itself on collision
     }
 
@@ -27,6 +28,7 @@ public class SporeBehavior : MonoBehaviour
     {
         if ( Time.time >= lifetime) 
         {
+            //Debug.Log("died bc of time");
             Destroy(gameObject); // Destroy itself after passes liftime
         }
 
