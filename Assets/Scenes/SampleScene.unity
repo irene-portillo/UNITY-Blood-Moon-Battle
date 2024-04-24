@@ -132,9 +132,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 397029994}
-  - component: {fileID: 397029993}
   - component: {fileID: 397029995}
   - component: {fileID: 397029996}
+  - component: {fileID: 397029993}
+  - component: {fileID: 397029997}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -224,6 +225,22 @@ MonoBehaviour:
   plrHealth: 100
   plrHitBoxBody: {fileID: 1462814624}
   plrHitBoxFt: {fileID: 1278513252}
+--- !u!114 &397029997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397029992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f4533f93c491b04f8f1a8c48ca8e55b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteObjHolder: {fileID: 863646209}
+  idlePlr: {fileID: -1245248549, guid: 8cfd56c42f2f25b40a9a7a803f4c6d01, type: 3}
+  attackPlr: {fileID: -1070169811, guid: 8cfd56c42f2f25b40a9a7a803f4c6d01, type: 3}
+  attackRate: 1
 --- !u!1 &464161178
 GameObject:
   m_ObjectHideFlags: 0
