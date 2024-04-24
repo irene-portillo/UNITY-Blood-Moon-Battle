@@ -17,6 +17,7 @@ public class PlayerAttacks : MonoBehaviour
 
     void Start()
     {
+        spriteRendererPlr= spriteObjHolder.GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -26,6 +27,7 @@ public class PlayerAttacks : MonoBehaviour
             attack();
         }
         updateTimer();
+        animatePlr();
     }
 
     private bool playerCanAttack() 
@@ -67,6 +69,18 @@ public class PlayerAttacks : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         enemyObject = null; // not colliding to anything  
+    }
+
+    void animatePlr() //switch attack & idle sprite
+    {
+        if (isAttacking)
+        {
+            spriteRendererPlr.sprite = attackPlr;
+        }
+        else
+        {
+            spriteRendererPlr.sprite = idlePlr;
+        }
     }
 
 }
