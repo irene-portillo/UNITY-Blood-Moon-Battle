@@ -13,5 +13,13 @@ public class ManageHealthUi : MonoBehaviour
 
     void Update()
     {
+        setHpStatus(playerHealthScript.getPlayerHealth());
+    }
+
+    void setHpStatus(int plrHealth)
+    {
+        healthStatus.text = plrHealth + " HP";
+    }
+
     }
 }
