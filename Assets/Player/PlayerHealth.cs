@@ -39,4 +39,9 @@ public class PlayerHealth : MonoBehaviour
             plrAnimtor.SetBool("plrIsDead", true); // update health for anim
         }
     }
+
+    public int getPlayerHealth()
+    {
+        return plrHealth;
+    }
 }
