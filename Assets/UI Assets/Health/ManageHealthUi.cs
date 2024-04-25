@@ -14,6 +14,7 @@ public class ManageHealthUi : MonoBehaviour
     void Update()
     {
         setHpStatus(playerHealthScript.getPlayerHealth());
+        handleHeartAnims(playerHealthScript.getPlayerHealth());
     }
 
     void setHpStatus(int plrHealth)
@@ -21,5 +22,11 @@ public class ManageHealthUi : MonoBehaviour
         healthStatus.text = plrHealth + " HP";
     }
 
+    void handleHeartAnims(int plrHealth)
+    {
+        if (plrHealth <= 30)
+        {
+            heartAnimator.SetBool("healthIsLow", true);
+        }
     }
 }
