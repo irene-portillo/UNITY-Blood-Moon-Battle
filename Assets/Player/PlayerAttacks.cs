@@ -14,10 +14,13 @@ public class PlayerAttacks : MonoBehaviour
     private float attackTimer = 0;
     private bool isAttacking = false;
     private GameObject enemyObject; // set through collision 
+    //ANIMATION
+    public Animator plrAnimator;
 
     void Start()
     {
         spriteRendererPlr= spriteObjHolder.GetComponent<SpriteRenderer>();
+        attackTimer = attackRate;
     }
 
     void Update()
@@ -75,11 +78,11 @@ public class PlayerAttacks : MonoBehaviour
     {
         if (isAttacking)
         {
-            spriteRendererPlr.sprite = attackPlr;
+            plrAnimator.SetBool("isAttacking", true);
         }
         else
         {
-            spriteRendererPlr.sprite = idlePlr;
+            plrAnimator.SetBool("isAttacking", false);
         }
     }
 
