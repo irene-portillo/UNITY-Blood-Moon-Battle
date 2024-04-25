@@ -76,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rigBody.velocity = new Vector2(rigBody.velocity.x, jumpSpeed); 
         }
+        handleJumpAnim();
     }
 
     void checkGrounded()
@@ -88,6 +89,21 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && xInput == 0 && yInput == 0 && rigBody.velocity.y <= 0)
         {
             rigBody.velocity *= groundDecay;
+        }
+    }
+
+    // ANIMATION //
+    //SOURCE: 2D Animation in Unity (Tutorial)
+    // https://www.youtube.com/watch?v=hkaysu1Z-N8
+    void handleJumpAnim() // ANIMATE: jumping
+    {
+        if (isGrounded)
+        {
+            plrAnimator.SetBool("isJumping", false); 
+        }
+        else 
+        {
+            plrAnimator.SetBool("isJumping", true); 
         }
     }
 
