@@ -23,6 +23,9 @@ public class PlayerMovement : MonoBehaviour
     float xInput;
     float yInput;
 
+    // ANIMATION 
+    public Animator plrAnimator;
+
     // Start is called before the first frame update
     void Start(){}
 
@@ -45,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
     {
         xInput = Input.GetAxis("Horizontal"); // returns coordinate based on if left or right (-1,0) and (1,0)
         yInput = Input.GetAxis("Vertical");  
+        plrAnimator.SetFloat("speedX", Mathf.Abs(xInput)); // ANIMATE: running 
     }
 
     void moveWithInput() // .normalized makes sure diagnally is same speed -- if u wanna add 
