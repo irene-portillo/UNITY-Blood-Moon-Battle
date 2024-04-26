@@ -7,9 +7,13 @@ public class SporeBehavior : MonoBehaviour
     public float lifetime;
     public CircleCollider2D sporeCollider;
     public float velocity;
+    private PlayerHealth plrHealthScript;
 
     void Start(){
         lifetime += Time.time;
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player"); // set player health script var
+        plrHealthScript = playerObj.GetComponent<PlayerHealth>();
+
     }
 
     void Update()
@@ -21,7 +25,16 @@ public class SporeBehavior : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //Debug.Log("collided!");
+        checkCollidePlr(collision); // check if collided w plr
         Destroy(gameObject); // Destroy itself on collision
+    }
+
+    void checkCollidePlr(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            plrHealthScript.decreaseHealth(5);
+        }
     }
 
     void manageLifetime()
