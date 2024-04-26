@@ -19,9 +19,14 @@ public class SporeBehavior : MonoBehaviour
     void Update()
     {
         manageLifetime(); // Make sure it's within its lifetime
-        transform.position -= (Vector3.left * velocity) * Time.deltaTime; //Move position
+        setPosition(); // set direction + pos of spore
     }
 
+    void setPosition()
+    {
+        float direction = Mathf.Sign(transform.parent.localScale.x); // see which way char is facing -1 or 1 
+        transform.position -= direction * (Vector3.left * velocity) * Time.deltaTime; //Move position
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         checkCollidePlr(collision); // check if collided w plr
