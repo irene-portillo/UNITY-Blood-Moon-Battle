@@ -21,12 +21,9 @@ public class PlayerHealth : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Damage plr if touches spore
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Spore")){
-            decreaseHealth(5);
-        }
     }
 
-    private void decreaseHealth(int increment)
+    public void decreaseHealth(int increment)
     {
         plrHealth -= increment;
     }
