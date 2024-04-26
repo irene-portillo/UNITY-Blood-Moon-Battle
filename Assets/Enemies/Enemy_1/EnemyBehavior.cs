@@ -35,6 +35,7 @@ public class EnemyBehavior : MonoBehaviour
     void shootSpore()
     {
         GameObject newSpore = Instantiate(sporeObj, transform.position, transform.rotation); //create spore
+        newSpore.transform.SetParent(transform);
         SporeBehavior sbScript = newSpore.GetComponent<SporeBehavior>();
         sbScript.enabled = true; // enable its script
     }
