@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SporeBehavior : MonoBehaviour
 {
-    public float lifetime;
     public CircleCollider2D sporeCollider;
+    public float lifetime;
     public float velocity;
     private PlayerHealth plrHealthScript;
 
@@ -24,7 +24,6 @@ public class SporeBehavior : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //Debug.Log("collided!");
         checkCollidePlr(collision); // check if collided w plr
         Destroy(gameObject); // Destroy itself on collision
     }
@@ -41,7 +40,6 @@ public class SporeBehavior : MonoBehaviour
     {
         if ( Time.time >= lifetime) 
         {
-            //Debug.Log("died bc of time");
             Destroy(gameObject); // Destroy itself after passes liftime
         }
 
