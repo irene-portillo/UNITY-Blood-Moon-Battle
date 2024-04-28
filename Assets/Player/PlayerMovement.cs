@@ -107,4 +107,8 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public Vector3 getPlayerPos()
+    {
+        return transform.position;
+    }
 }
