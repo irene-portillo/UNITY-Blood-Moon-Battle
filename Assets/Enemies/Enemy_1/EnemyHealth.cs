@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int enemyHealth;
     public AnimateEnemy animScript;
+    public int enemyHealth;
     private int currHitsTaken = 0;
 
     void Start()
@@ -21,7 +21,7 @@ public class EnemyHealth : MonoBehaviour
     public void takeDamage(int amount)
     {
         enemyHealth -= amount;
-        Debug.Log("ENEMY took damage! Health: " + enemyHealth);
+        Debug.Log("------------------>ENEMY took damage! Health: " + enemyHealth);
         animScript.startDamageAnim();
         currHitsTaken++;
     }
