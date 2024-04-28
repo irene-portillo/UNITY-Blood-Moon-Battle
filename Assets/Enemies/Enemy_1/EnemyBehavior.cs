@@ -35,6 +35,23 @@ public class EnemyBehavior : MonoBehaviour
             swtichPosition();
         }
     }
+
+    void swtichPosition()
+    {       
+        // VARS
+        Vector3 playerPos = plrMoveScript.getPlayerPos();
+        float imgWidth = animEnScript.getSpriteBounds();
+
+        // decide on addition or subtraction 
+        float sign = Mathf.Sign( transform.localScale.x);
+
+        // +- amount of image width 
+        float newX = imgWidth * (sign) + transform.position.x; // BUG NOW, hitting / attacks 
+
+        transform.position = new Vector3(newX, transform.position.y);
+        flipSpriteImg();
+        enHealthScript.resetHits();
+    }
 ////////////////////////////////////////////////// SHOOTING //////////////////////////////////////////////////////////////////////////
 void updateTimer() // update timer + shoots 
     {
