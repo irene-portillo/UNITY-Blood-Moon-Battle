@@ -27,4 +27,10 @@ public class AnimateEnemy : MonoBehaviour
     {
         enemyAnimator.SetBool("isTakingDamage", false);
     }
+    
+    public float getSpriteBounds()
+    {
+        return GetComponent<SpriteRenderer>().bounds.size.x;
+    }
+
 }
