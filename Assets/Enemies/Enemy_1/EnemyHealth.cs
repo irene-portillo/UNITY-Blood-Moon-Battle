@@ -6,6 +6,8 @@ public class EnemyHealth : MonoBehaviour
 {
     public int enemyHealth;
     public AnimateEnemy animScript;
+    private int currHitsTaken = 0;
+
     void Start()
     {
         
@@ -21,5 +23,16 @@ public class EnemyHealth : MonoBehaviour
         enemyHealth -= amount;
         Debug.Log("ENEMY took damage! Health: " + enemyHealth);
         animScript.startDamageAnim();
+        currHitsTaken++;
+    }
+
+    public int getHits()
+    {
+        return currHitsTaken;
+    }
+
+    public void resetHits()
+    {
+        currHitsTaken = 0;
     }
 }
