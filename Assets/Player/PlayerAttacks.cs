@@ -45,6 +45,7 @@ public class PlayerAttacks : MonoBehaviour
         {
             enemyHealthScript.takeDamage(1); // make enemy take damage -1hp
             attackTimer = 0; //reset timer
+            resetEnemyObj();
         }
     }
 
@@ -61,7 +62,7 @@ public class PlayerAttacks : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if(collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
@@ -71,7 +72,12 @@ public class PlayerAttacks : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        enemyObject = null; // not colliding to anything  
+        resetEnemyObj();
+    }
+
+    public void resetEnemyObj()
+    {
+        enemyObject = null; 
     }
 
     void animatePlr() //switch attack & idle sprite
