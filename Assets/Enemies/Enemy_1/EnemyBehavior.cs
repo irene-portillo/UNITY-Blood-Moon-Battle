@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
 {
+    // SHOOTING 
     public GameObject sporeObj;
     public int spawnRate; // seconds 
     private float timer = 0 ;
@@ -19,7 +20,8 @@ public class EnemyBehavior : MonoBehaviour
         updateTimer();
     }
 
-    void updateTimer() // update timer + shoots 
+////////////////////////////////////////////////// SHOOTING //////////////////////////////////////////////////////////////////////////
+void updateTimer() // update timer + shoots 
     {
         if (timer < spawnRate)
         {
