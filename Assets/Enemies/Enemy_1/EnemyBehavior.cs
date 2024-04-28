@@ -8,10 +8,16 @@ public class EnemyBehavior : MonoBehaviour
     public GameObject sporeObj;
     public int spawnRate; // seconds 
     private float timer = 0 ;
+    
+    // MOVEMENT 
+    public PlayerMovement plrMoveScript;
+    private EnemyHealth enHealthScript;
+    public AnimateEnemy animEnScript;
+    
 
     void Start()
     {
-        
+        enHealthScript = transform.GetComponent<EnemyHealth>();
     }
 
     // Update is called once per frame
