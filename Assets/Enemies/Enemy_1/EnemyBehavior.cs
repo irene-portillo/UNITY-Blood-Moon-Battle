@@ -52,6 +52,18 @@ public class EnemyBehavior : MonoBehaviour
         flipSpriteImg();
         enHealthScript.resetHits();
     }
+
+    private void flipSpriteImg()
+    {
+        Vector3 newScale = transform.localScale;
+        newScale.x *= -1;
+        transform.localScale = newScale;
+    }
+
+    private bool isFlipped() // true means scale == -1  // false means scale == 1  
+    {
+        return ( transform.localScale.x < 0 ); 
+    }
 ////////////////////////////////////////////////// SHOOTING //////////////////////////////////////////////////////////////////////////
 void updateTimer() // update timer + shoots 
     {
