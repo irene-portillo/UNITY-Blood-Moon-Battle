@@ -133,6 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 568d82420f6893842aa34fe57c1f5e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifetime: 7
   sporeCollider: {fileID: 6024597197650457752}
-  velocity: 7
+  lifetime: 7
+  velocity: 10
