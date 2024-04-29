@@ -18,10 +18,6 @@ public class PlayerHealth : MonoBehaviour
         checkPlrHealth();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Damage plr if touches spore
-    }
 
     public void decreaseHealth(int increment)
     {
