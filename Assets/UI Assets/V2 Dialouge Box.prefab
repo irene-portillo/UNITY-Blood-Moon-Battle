@@ -462,7 +462,7 @@ GameObject:
   - component: {fileID: 247109626441968710}
   - component: {fileID: 7269897933904715653}
   m_Layer: 5
-  m_Name: TextBox_V2
+  m_Name: V2 Dialouge Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

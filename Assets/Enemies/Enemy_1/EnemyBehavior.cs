@@ -14,6 +14,8 @@ public class EnemyBehavior : MonoBehaviour
     private EnemyHealth enHealthScript;
     public AnimateEnemy animEnScript;
 
+    //HEALTH
+    public GameLogic gameLogScript;
 
     void Start()
     {
@@ -23,6 +25,7 @@ public class EnemyBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (gameLogScript.plrWonFight) { return; }
         updateTimer();
         checkHits();
     }

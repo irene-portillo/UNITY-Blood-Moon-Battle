@@ -44,6 +44,12 @@ public class AnimateEnemy : MonoBehaviour
         enemyAnimator.SetBool("isSwitchingSide", false);
     }
 
+    // DEATH //
+    public void startDeathAnim()
+    {
+        enemyAnimator.SetBool("isDead", true);
+    }
+
     public float getSpriteBounds()
     {
         return GetComponent<SpriteRenderer>().bounds.size.x;

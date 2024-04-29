@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8af14d54e1f5f414bb1ab01437d06ccf
+guid: d9acdc6f71f86ad4fa1b3b28a6ea7067
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RedMoonTower_free_idle_animation._0
+      name: wizard idle_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 100
-        height: 140
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80c7e09e6cc654c4a83fb99cd599a5df
-      internalID: -580423183
+      spriteID: 107bc0d7f9670f84baaf09c456bfafc9
+      internalID: 1344083112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedMoonTower_free_idle_animation._1
+      name: wizard idle_1
       rect:
         serializedVersion: 2
-        x: 100
+        x: 80
         y: 0
-        width: 100
-        height: 140
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c0dbc0e38eb5294f85b46adada7e204
-      internalID: 1064940747
+      spriteID: 75be4e37e58b3754a8ec0aa844f1f3e0
+      internalID: 27443515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedMoonTower_free_idle_animation._2
+      name: wizard idle_2
       rect:
         serializedVersion: 2
-        x: 200
+        x: 160
         y: 0
-        width: 100
-        height: 140
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: beda09c70edf2af41be73ae4b4eaa779
-      internalID: -2017508991
+      spriteID: d6e3de946af09ef4895daaf5adb8d181
+      internalID: -1313579803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedMoonTower_free_idle_animation._3
+      name: wizard idle_3
       rect:
         serializedVersion: 2
-        x: 300
+        x: 240
         y: 0
-        width: 100
-        height: 140
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 950dbe24a1560f34ab48d6cc24d6fd2f
-      internalID: -300848041
+      spriteID: ba68282e2a67270488b8a540dff56302
+      internalID: 1198297296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedMoonTower_free_idle_animation._4
+      name: wizard idle_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edb72fae8230d64681a2181669e9371
+      internalID: 926710763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizard idle_5
       rect:
         serializedVersion: 2
         x: 400
         y: 0
-        width: 100
-        height: 140
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +216,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a750fa1ac3c1e2240b202bc6a0889b49
-      internalID: 1333443140
+      spriteID: d384b73a4d0b78148837a82965f476d5
+      internalID: -1805965893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedMoonTower_free_idle_animation._5
+      name: wizard idle_6
       rect:
         serializedVersion: 2
-        x: 500
+        x: 480
         y: 0
-        width: 100
-        height: 140
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b3564716b0e29c46ba6c2760aacba31
-      internalID: 1778301030
+      spriteID: c134a71d1bb57b24aaef398335554b5d
+      internalID: -964043996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedMoonTower_free_idle_animation._6
+      name: wizard idle_7
       rect:
         serializedVersion: 2
-        x: 600
+        x: 560
         y: 0
-        width: 100
-        height: 140
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9bae20215a70e64f93a34b6bf96d4a1
-      internalID: -398650672
+      spriteID: 596f2fd90cb473c45946562bad0d73a5
+      internalID: 770140210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedMoonTower_free_idle_animation._7
+      name: wizard idle_8
       rect:
         serializedVersion: 2
-        x: 700
+        x: 640
         y: 0
-        width: 100
-        height: 140
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,20 +279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce69ea8bb34159f4da9235e48bf00b83
-      internalID: 1375200774
+      spriteID: acb0e070444526744ad5004eb180c22b
+      internalID: 1308916473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RedMoonTower_free_idle_animation._8
+      name: wizard idle_9
       rect:
         serializedVersion: 2
-        x: 800
+        x: 720
         y: 0
-        width: 100
-        height: 140
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,50 +300,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bde2c8c0036b974f88efab7c6d9f973
-      internalID: -702418585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RedMoonTower_free_idle_animation._9
-      rect:
-        serializedVersion: 2
-        x: 900
-        y: 0
-        width: 100
-        height: 140
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4794078f8a888e747ae63c8b0abbec7c
-      internalID: 1780450847
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RedMoonTower_free_idle_animation._10
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 100
-        height: 140
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ab612c45a796f1469f6da03cab1a735
-      internalID: -1072228420
+      spriteID: 4e39cb0a71442dd4ca439e299b43931f
+      internalID: 1584286262
       vertices: []
       indices: 
       edges: []
@@ -338,17 +317,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RedMoonTower_free_idle_animation._0: -580423183
-      RedMoonTower_free_idle_animation._1: 1064940747
-      RedMoonTower_free_idle_animation._10: -1072228420
-      RedMoonTower_free_idle_animation._2: -2017508991
-      RedMoonTower_free_idle_animation._3: -300848041
-      RedMoonTower_free_idle_animation._4: 1333443140
-      RedMoonTower_free_idle_animation._5: 1778301030
-      RedMoonTower_free_idle_animation._6: -398650672
-      RedMoonTower_free_idle_animation._7: 1375200774
-      RedMoonTower_free_idle_animation._8: -702418585
-      RedMoonTower_free_idle_animation._9: 1780450847
+      wizard idle_0: 1344083112
+      wizard idle_1: 27443515
+      wizard idle_2: -1313579803
+      wizard idle_3: 1198297296
+      wizard idle_4: 926710763
+      wizard idle_5: -1805965893
+      wizard idle_6: -964043996
+      wizard idle_7: 770140210
+      wizard idle_8: 1308916473
+      wizard idle_9: 1584286262
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
