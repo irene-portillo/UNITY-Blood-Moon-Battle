@@ -21,7 +21,10 @@ public class PlayerHealth : MonoBehaviour
 
     public void decreaseHealth(int increment)
     {
-        plrHealth -= increment;
+        if( plrHealth > 0)
+        {
+            plrHealth -= increment;
+        }
     }
 
     void checkPlrHealth()
