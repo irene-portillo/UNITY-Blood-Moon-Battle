@@ -32,12 +32,18 @@ public class EnemyBehavior : MonoBehaviour
     {
         if(enHealthScript.getHits() >= 5)
         {
-            swtichPosition();
+            triggerDashAnim();
+            enHealthScript.resetHits();
         }
     }
 
-    void swtichPosition()
-    {       
+    void triggerDashAnim()
+    {
+        animEnScript.startDashAnim(); // end of anim will call swtichPosition()
+    }
+
+    public void swtichPosition()
+    {
         // VARS
         Vector3 playerPos = plrMoveScript.getPlayerPos();
         float imgWidth = animEnScript.getSpriteBounds();
@@ -50,7 +56,7 @@ public class EnemyBehavior : MonoBehaviour
 
         transform.position = new Vector3(newX, transform.position.y);
         flipSpriteImg();
-        enHealthScript.resetHits();
+        Debug.Log("ran switch pos ");
     }
 
     private void flipSpriteImg()
