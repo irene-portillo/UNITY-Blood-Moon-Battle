@@ -8,8 +8,8 @@ public class PlayerHealth : MonoBehaviour
     public BoxCollider2D plrHitBoxBody;
     public BoxCollider2D plrHitBoxFt;
 
-    public Animator plrAnimtor;
 
+    public animatePlayer animPlrScript;
     // Start is called before the first frame update
     void Start(){}
 
@@ -30,6 +30,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("Player has DIED!!!!");
             plrAnimtor.SetBool("plrIsDead", true); // update health for anim
+            animPlrScript.startPlrIsDead();
         }
     }
 
