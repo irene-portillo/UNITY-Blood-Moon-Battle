@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
     public int plrHealth;
     public BoxCollider2D plrHitBoxBody;
     public BoxCollider2D plrHitBoxFt;
+    public GameLogic gameLogicScript;
 
 
     public animatePlayer animPlrScript;
@@ -15,6 +16,7 @@ public class PlayerHealth : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
+        if (gameLogicScript.gameOver == true) { return;} // make sure game isnt over 
         checkPlrHealth();
     }
 
@@ -32,8 +34,8 @@ public class PlayerHealth : MonoBehaviour
         if (plrHealth <= 0)
         {
             Debug.Log("Player has DIED!!!!");
-            plrAnimtor.SetBool("plrIsDead", true); // update health for anim
             animPlrScript.startPlrIsDead();
+            gameLogicScript.setGameOver();
         }
     }
 

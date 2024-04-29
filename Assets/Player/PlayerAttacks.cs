@@ -14,6 +14,7 @@ public class PlayerAttacks : MonoBehaviour
     private float attackTimer = 0;
     private bool isAttacking = false;
     private GameObject enemyObject; // set through collision 
+    public GameLogic gameLogicScript;
     //ANIMATION
     public Animator plrAnimator;
 
@@ -25,6 +26,8 @@ public class PlayerAttacks : MonoBehaviour
 
     void Update()
     {
+        if (gameLogicScript.gameOver == true) { return; } // make sure game isnt over 
+
         if ( Input.GetKey(KeyCode.F) && playerCanAttack() ) // player attempts to attack 
         {
             attack();
@@ -43,7 +46,7 @@ public class PlayerAttacks : MonoBehaviour
         EnemyHealth enemyHealthScript = enemyObject.GetComponentInChildren<EnemyHealth>(); 
         if (enemyHealthScript != null) //make sure script exists
         {
-            enemyHealthScript.takeDamage(1); // make enemy take damage -1hp
+            enemyHealthScript.takeDamage(5); // make enemy take damage -1hp
             attackTimer = 0; //reset timer
             resetEnemyObj();
         }

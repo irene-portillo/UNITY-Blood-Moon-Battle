@@ -26,12 +26,20 @@ public class PlayerMovement : MonoBehaviour
     // ANIMATION 
     public Animator plrAnimator;
 
+    // LOGIC
+    public GameLogic gameLogicScript;
+
     // Start is called before the first frame update
     void Start(){}
 
     // Update is called once per frame
     void Update()
     {
+        if (gameLogicScript.gameOver == true) { 
+            xInput = 0;
+            yInput = 0;
+            return;
+        } // make sure game isnt over 
         getInput();
         handleJump();
     }
