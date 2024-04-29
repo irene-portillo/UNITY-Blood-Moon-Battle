@@ -28,6 +28,18 @@ public class AnimateEnemy : MonoBehaviour
         enemyAnimator.SetBool("isTakingDamage", false);
     }
     
+
+    // DASH // 
+    public void startDashAnim()
+    {
+        enemyAnimator.SetBool("isSwitchingSide", true);
+    }
+
+    public void endDashAnim() // triggered through end of animation
+    {
+        enemyAnimator.SetBool("isSwitchingSide", false);
+    }
+
     public float getSpriteBounds()
     {
         return GetComponent<SpriteRenderer>().bounds.size.x;
