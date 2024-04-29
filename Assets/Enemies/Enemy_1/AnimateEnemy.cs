@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimateEnemy : MonoBehaviour
 {
     public Animator enemyAnimator;
+    public EnemyBehavior enBehaviorScript;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class AnimateEnemy : MonoBehaviour
         
     }
 
+    // DAMAGE //
     public void startDamageAnim() //called on by EnemyHealth script
     {
         enemyAnimator.SetBool("isTakingDamage", true);
@@ -25,7 +27,9 @@ public class AnimateEnemy : MonoBehaviour
 
     public void endDamageAnim() // triggered through end of animation
     {
+        Debug.Log("was this ever called???");
         enemyAnimator.SetBool("isTakingDamage", false);
+        enBehaviorScript.swtichPosition();
     }
     
 
